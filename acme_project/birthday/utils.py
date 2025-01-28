@@ -1,15 +1,4 @@
-from django.contrib import admin
-
 from datetime import date
-
-from .models import Tag
-
-
-@admin.register(Tag)
-class Tag(admin.ModelAdmin):
-    list_dispaly = ('tag')
-    search_fields = ('tag',)
-    list_filter = ('tag',)
 
 
 def calculate_birthday_countdown(birthday):
